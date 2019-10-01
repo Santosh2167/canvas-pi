@@ -2,12 +2,17 @@ import React, { Component } from "react";
 
 class ColourSelector extends Component {
   render() {
+    const { hex } = this.props;
     return (
       <div>
-        <p> from Colour Selector Component</p>
+        <input type="color" defaultValue={hex} />
       </div>
     );
   }
+}
+
+ColourSelector.defaultProps = {
+  hex: "#ffff00",
 }
 
 export default ColourSelector;
