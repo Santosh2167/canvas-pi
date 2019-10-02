@@ -5,7 +5,7 @@ class ColourSelector extends Component {
   state = { hex: this.props.hex };
 
   onInputChange(event) {
-    this.setState({ hex: this.event.target.value })
+    this.setState({ hex: event.target.value })
   }
 
   componentDidUpdate() {
@@ -18,7 +18,7 @@ class ColourSelector extends Component {
         <input
           type="color"
           value={hex}
-          onChange={this.onInputChange} />
+          onChange={event => this.onInputChange(event)} />
       </div>
     );
   }
