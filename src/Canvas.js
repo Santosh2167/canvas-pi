@@ -20,7 +20,7 @@ export default class Canvas extends Component {
         <canvas
           width={width}
           height={height}
-          style={{ border: "2px solid black" }}
+          style={{ border: "2px solid brown" }}
         />
       </div>
     )

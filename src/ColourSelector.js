@@ -6,9 +6,7 @@ class ColourSelector extends Component {
     const { onColourSelectorChange } = this.props;
     onColourSelectorChange(event.target.value);
   }
-  // componentDidUpdate() {
-  //   console.log(this.state.hex);
-  // }
+
 
   render() {
     const { hex } = this.props;
